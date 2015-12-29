@@ -1,0 +1,27 @@
+void setup()
+{
+  int sensor = 8;
+  int led = 3;
+  
+  pinMode(sensor,INPUT);
+  pinMode(led, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() 
+{
+  int sensor = 8; 
+  int led = 3;
+  
+  if (digitalRead(sensor) == HIGH) 
+  {
+    digitalWrite(led, HIGH);
+    Serial.println(1);
+    delay(10000);
+  }
+  else 
+  {
+    digitalWrite(3,LOW);
+  }
+  
+}
